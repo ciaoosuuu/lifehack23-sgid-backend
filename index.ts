@@ -94,7 +94,7 @@ apiRouter.get("/redirect", async (req, res): Promise<void> => {
 
   // Validate that the code verifier exists for this session
   if (session?.codeVerifier === undefined) {
-    res.redirect(`${frontendHost}/error`);
+    res.redirect(`${frontendHost}/chat`);
     return;
   }
 
