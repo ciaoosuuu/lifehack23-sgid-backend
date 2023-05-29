@@ -10,7 +10,7 @@ dotenv.config();
 
 const PORT = 5001;
 const redirectUri = String(
-  process.env.SGID_REDIRECT_URI ?? `http://localhost:${PORT}/api/redirect`
+  process.env.SGID_REDIRECT_URI ?? `https://vccm-sgid.onrender.com/api/redirect`
 );
 const frontendHost = String(
   process.env.SGID_FRONTEND_HOST ?? "http://localhost:3000"
