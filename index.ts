@@ -30,6 +30,7 @@ const apiRouter = Router();
 const SESSION_COOKIE_NAME = "exampleAppSession";
 const SESSION_COOKIE_OPTIONS = {
   httpOnly: true,
+  secure: true,
 };
 
 type SessionData = Record<
