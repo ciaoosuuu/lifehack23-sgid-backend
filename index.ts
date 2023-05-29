@@ -13,7 +13,7 @@ const redirectUri = String(
   process.env.SGID_REDIRECT_URI ?? `https://vccm-sgid.onrender.com/api/redirect`
 );
 const frontendHost = String(
-  process.env.SGID_FRONTEND_HOST ?? "https://cors-anywhere.herokuapp.com/"
+  process.env.SGID_FRONTEND_HOST ?? "https://vccm.netlify.app"
 );
 
 const sgid = new SgidClient({
